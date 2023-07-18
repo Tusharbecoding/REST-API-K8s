@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: rest-api-pod
+spec:
+  containers:
+    - image: 70d3f4721900
+      name: node-api
+      imagePullPolicy: Never
+      resources: {}
+      ports:
+        - containerPort: 3000
